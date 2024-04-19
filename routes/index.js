@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 const authRouter = require("./auth");
-const showRoomRouter = require("./showRoom");
+const foodRouter = require("./food");
 
 router.use("/auth", authRouter);
-router.use("/showRoom", showRoomRouter);
+router.use("/food", foodRouter);
 
 module.exports = router;
